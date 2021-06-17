@@ -1,8 +1,6 @@
 <?php 
 
-    $teams = ["岩藤","GB","SH","チャオズ"];
-
-
+    $teams = ["岩藤","ジェントル","ヨゴーズ","チャオズ","ザクレイ","ガナーズ","クサカク"];
 
 
 ?>
@@ -16,40 +14,19 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="row">
-    <div class="box"></div>
-    <div class="box"><?= $teams[0]?></div>
-    <div class="box"><?= $teams[1]?></div>
-    <div class="box"><?= $teams[2]?></div>
-    <div class="box"><?= $teams[3]?></div>
+  <div class="row"> 
+      <div class="box">＊</div>
+      <?php foreach($teams as $team):?>
+      <div class="box"><?php echo $team;?></div>
+      <?php endforeach ?>
   </div>
+  <?php foreach($teams as $team):?>
   <div class="row">
-    <div class="box"><?= $teams[0]?></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+      <div class="box"><?= $team?></div>
+      <?php for ($i=0 ; $i< count($teams); $i++): ?>
+      <div class="box"></div>
+      <?php endfor ?>
   </div>
-  <div class="row">
-    <div class="box"><?= $teams[1]?></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <div class="row">
-    <div class="box"><?= $teams[2]?></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-  <div class="row">
-    <div class="box"><?= $teams[3]?></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
+  <?php endforeach ?>
 </body>
 </html>
