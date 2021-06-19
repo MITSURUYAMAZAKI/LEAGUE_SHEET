@@ -30,5 +30,3 @@
   <?php endforeach ?>
 </body>
 </html>
-
-あああああ
