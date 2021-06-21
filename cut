@@ -1,0 +1,10 @@
+   <?php if ( $team = $teams[0] ){?>
+        <?php var_dump($team)?>
+<!-- オブジェクト指向にしてみよう -->
+            <?php 
+            // var_dump($teams[0])
+            ?>
+              <div class="box">＊</div>
+          <?php } else {?>
+              <div class="box"></div>
+          <?php }?>
