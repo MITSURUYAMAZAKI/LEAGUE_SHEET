@@ -1,8 +1,5 @@
 <?php 
-
     $teams = ["岩藤","ジェントル","ヨゴーズ","チャオズ","ガナーズ","クサカク"];
-
-
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +25,7 @@
       <div class="box"><?= $team?></div>
       <!-- ２列目以降 -->
       <?php for ($i=0 ; $i< count($teams); $i++): ?>
-        <div class="box"><?= $team."×".$teams[$i];?></div>
+        <div class="box"><?=$team."×".$teams[$i];?></div>
       <?php endfor ?>
   </div>
   <?php endforeach ?>
