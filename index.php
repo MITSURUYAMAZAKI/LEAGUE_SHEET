@@ -1,4 +1,5 @@
-<?php 
+<?php
+    require_once("./function.php");
     $teams = ["岩藤","ジェントル","ヨゴーズ","チャオズ","ガナーズ","クサカク"];
 ?>
 
@@ -31,3 +32,12 @@
   <?php endforeach ?>
 </body>
 </html>
+
+<?php
+$taro = new Human();
+
+// セットします
+$taro->setName('太郎');
+
+//取ってきて出力します
+echo $taro->getName().'です';
